@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;500;600&display=swap');
 
 /* Root CSS Variables for Brand Colors */
 :root {
@@ -14,45 +13,130 @@
   --brand-teal-blue: #2d4a5e;
 }
 
-/* Base Typography */
+/* Base Typography - Diesel Dudes Style */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--brand-black);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Bold Typography like Diesel Dudes */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 900;
   color: var(--brand-dark-blue);
+  line-height: 1.2;
+  margin: 0;
 }
 
-/* Conversion-Optimized Button Styles */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+}
+
+/* Diesel Dudes Style Buttons */
 .btn-primary {
   background-color: var(--brand-gold);
   color: white;
   border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  padding: 18px 32px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(212, 159, 66, 0.3);
+  cursor: pointer;
 }
 
 .btn-primary:hover {
   background-color: #c8933a;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 159, 66, 0.4);
 }
 
-/* Phone Number Styling */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--brand-dark-blue);
+  border: 2px solid var(--brand-dark-blue);
+  padding: 16px 30px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand-dark-blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Phone Number Styling - Diesel Dudes Style */
 .phone-cta {
   color: var(--brand-gold);
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
 }
 
 .phone-cta:hover {
   color: #c8933a;
+  transform: scale(1.05);
+}
+
+/* Service Cards - Diesel Dudes Style */
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Bold Text Classes */
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
 }

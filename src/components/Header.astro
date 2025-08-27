@@ -1,8 +1,8 @@
 ---
-// Header component with logo and prominent phone CTA
+// Header component - exact Diesel Dudes style
 ---
 
-<header class="bg-white shadow-sm border-b border-brand-light-gray sticky top-0 z-50">
+<header style="background-color: #0d4167;" class="shadow-lg sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-4">
       <!-- Logo -->
@@ -17,38 +17,46 @@
       </div>
       
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-8">
-        <a href="/services" class="text-brand-dark-gray hover:text-brand-dark-blue font-medium transition-colors">
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-white hover:text-yellow-400 font-medium transition-colors">
+          Home
+        </a>
+        <a href="/services" class="text-white hover:text-yellow-400 font-medium transition-colors">
           Services
         </a>
-        <a href="/about" class="text-brand-dark-gray hover:text-brand-dark-blue font-medium transition-colors">
+        <a href="/about" class="text-white hover:text-yellow-400 font-medium transition-colors">
           About
         </a>
-        <a href="/contact" class="text-brand-dark-gray hover:text-brand-dark-blue font-medium transition-colors">
+        <a href="/contact" class="text-white hover:text-yellow-400 font-medium transition-colors">
           Contact
         </a>
       </nav>
       
-      <!-- Phone CTA -->
-      <div class="flex items-center space-x-4">
+      <!-- Phone and CTA Buttons -->
+      <div class="flex items-center space-x-3">
         <a 
-          href="tel:+1234567890" 
-          class="phone-cta text-lg font-semibold hover:underline"
+          href="tel:+19498778008" 
+          style="background-color: #d49f42;" 
+          class="text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-all flex items-center gap-2 text-sm uppercase tracking-wide"
           aria-label="Call Keene Energy"
         >
-          📞 (123) 456-7890
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>
+          (949) 877-8008
         </a>
         <a 
           href="/contact" 
-          class="btn-primary hidden sm:inline-block"
+          style="background-color: #d49f42;" 
+          class="text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-all text-sm uppercase tracking-wide hidden sm:inline-block"
         >
           Get Free Estimate
         </a>
       </div>
       
       <!-- Mobile Menu Button -->
-      <button class="md:hidden p-2" aria-label="Open mobile menu">
-        <svg class="w-6 h-6 text-brand-dark-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button class="lg:hidden p-2" aria-label="Open mobile menu">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
