@@ -1,0 +1,107 @@
+---
+// Footer component with contact information and trust signals
+---
+
+<footer class="bg-brand-dark-blue text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Main Footer Content -->
+    <div class="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="mb-6">
+          <img 
+            src="/src/assets/keen-energy-logo.svg" 
+            alt="Keene Energy" 
+            class="h-12 w-auto filter brightness-0 invert"
+          />
+        </div>
+        <p class="text-blue-100 mb-6 max-w-md">
+          Professional commercial solar and electrical contractor serving businesses with over 30 years of combined experience and 800MW+ of project expertise.
+        </p>
+        
+        <!-- Contact Info -->
+        <div class="space-y-3">
+          <a 
+            href="tel:+1234567890" 
+            class="flex items-center text-brand-gold hover:text-white transition-colors"
+          >
+            <span class="mr-3">📞</span>
+            <span class="text-lg font-semibold">(123) 456-7890</span>
+          </a>
+          <a 
+            href="mailto:info@keenenergyusa.com" 
+            class="flex items-center text-blue-100 hover:text-white transition-colors"
+          >
+            <span class="mr-3">📧</span>
+            <span>info@keenenergyusa.com</span>
+          </a>
+          <div class="flex items-start text-blue-100">
+            <span class="mr-3 mt-1">📍</span>
+            <span>
+              [Your Business Address]<br/>
+              [City, State ZIP]
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Services -->
+      <div>
+        <h4 class="font-heading text-lg mb-4">Services</h4>
+        <ul class="space-y-2">
+          <li><a href="/services/commercial-solar" class="text-blue-100 hover:text-white transition-colors">Commercial Solar</a></li>
+          <li><a href="/services/battery-storage" class="text-blue-100 hover:text-white transition-colors">Battery Storage</a></li>
+          <li><a href="/services/ev-charging" class="text-blue-100 hover:text-white transition-colors">EV Charging</a></li>
+          <li><a href="/services/electrical-upgrades" class="text-blue-100 hover:text-white transition-colors">Electrical Upgrades</a></li>
+          <li><a href="/services/design-engineering" class="text-blue-100 hover:text-white transition-colors">Design & Engineering</a></li>
+          <li><a href="/services/maintenance" class="text-blue-100 hover:text-white transition-colors">Maintenance</a></li>
+        </ul>
+      </div>
+      
+      <!-- Company -->
+      <div>
+        <h4 class="font-heading text-lg mb-4">Company</h4>
+        <ul class="space-y-2">
+          <li><a href="/about" class="text-blue-100 hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/contact" class="text-blue-100 hover:text-white transition-colors">Contact</a></li>
+          <li><a href="/projects" class="text-blue-100 hover:text-white transition-colors">Projects</a></li>
+          <li><a href="/blog" class="text-blue-100 hover:text-white transition-colors">Resources</a></li>
+        </ul>
+        
+        <!-- Trust Signals -->
+        <div class="mt-6">
+          <h5 class="font-semibold mb-3">Certifications</h5>
+          <div class="space-y-2 text-sm text-blue-100">
+            <div class="flex items-center">
+              <span class="text-brand-gold mr-2">🏅</span>
+              Licensed Contractor
+            </div>
+            <div class="flex items-center">
+              <span class="text-brand-gold mr-2">🛡️</span>
+              Fully Insured
+            </div>
+            <div class="flex items-center">
+              <span class="text-brand-gold mr-2">⚡</span>
+              NABCEP Certified
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-brand-medium-blue py-6">
+      <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        <div class="text-sm text-blue-100">
+          © {new Date().getFullYear()} Keene Energy. All rights reserved.
+        </div>
+        
+        <!-- Service Areas -->
+        <div class="text-sm text-blue-100 text-center sm:text-right">
+          <span class="font-medium">Serving:</span>
+          [Your Service Areas - Cities/Counties]
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

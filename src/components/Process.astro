@@ -1,0 +1,93 @@
+---
+// Simple 3-step process section
+const steps = [
+  {
+    number: "01",
+    title: "Free Consultation & Site Assessment",
+    description: "We evaluate your energy usage, site conditions, and business goals to design the perfect solution – no pressure, just expert guidance.",
+    icon: "📋"
+  },
+  {
+    number: "02", 
+    title: "Custom Design & Proposal",
+    description: "Receive a detailed proposal with energy savings projections, financing options, and a timeline tailored to your needs.",
+    icon: "🎨"
+  },
+  {
+    number: "03",
+    title: "Professional Installation & Activation",
+    description: "Our certified team handles permits, installation, and utility interconnection – you start saving from day one.",
+    icon: "⚡"
+  }
+];
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-heading text-brand-dark-blue mb-4">
+        Simple Process, Exceptional Results
+      </h2>
+      <p class="text-xl text-brand-dark-gray max-w-3xl mx-auto">
+        From consultation to activation, we make commercial solar simple and stress-free.
+      </p>
+    </div>
+    
+    <!-- Process Steps -->
+    <div class="grid lg:grid-cols-3 gap-8">
+      {steps.map((step, index) => (
+        <div class="relative">
+          <!-- Connector Line (hidden on mobile) -->
+          {index < steps.length - 1 && (
+            <div class="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-brand-light-gray -translate-x-1/2 z-0"></div>
+          )}
+          
+          <!-- Step Card -->
+          <div class="relative bg-white border border-brand-light-gray rounded-xl p-8 hover:shadow-lg transition-shadow z-10">
+            <!-- Step Number -->
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold text-lg">
+              {step.number}
+            </div>
+            
+            <!-- Icon -->
+            <div class="text-4xl mb-4 mt-4">
+              {step.icon}
+            </div>
+            
+            <!-- Title -->
+            <h3 class="text-xl font-heading text-brand-dark-blue mb-3">
+              {step.title}
+            </h3>
+            
+            <!-- Description -->
+            <p class="text-brand-dark-gray leading-relaxed">
+              {step.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <!-- Bottom CTA -->
+    <div class="text-center mt-12">
+      <p class="text-lg text-brand-dark-gray mb-6">
+        Ready to start saving on your energy costs?
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="tel:+1234567890" 
+          class="btn-primary text-lg px-8 py-4"
+        >
+          📞 Schedule Free Consultation
+        </a>
+        <a 
+          href="/contact" 
+          class="bg-transparent border-2 border-brand-dark-blue text-brand-dark-blue hover:bg-brand-dark-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+        >
+          Get Written Estimate
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
