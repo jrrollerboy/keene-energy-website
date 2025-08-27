@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Root CSS Variables for Brand Colors */
+:root {
+  --brand-gray: #b9b2ad;
+  --brand-black: #151515;
+  --brand-dark-gray: #3b3b3b;
+  --brand-light-gray: #d3d3d3;
+  --brand-white: #ffffff;
+  --brand-gold: #d49f42;
+  --brand-dark-blue: #1e3a50;
+  --brand-medium-blue: #0d4167;
+  --brand-teal-blue: #2d4a5e;
+}
+
+/* Base Typography */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--brand-black);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--brand-dark-blue);
+}
+
+/* Conversion-Optimized Button Styles */
+.btn-primary {
+  background-color: var(--brand-gold);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #c8933a;
+  transform: translateY(-1px);
+}
+
+/* Phone Number Styling */
+.phone-cta {
+  color: var(--brand-gold);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.phone-cta:hover {
+  color: #c8933a;
+}
